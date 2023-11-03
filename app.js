@@ -27,19 +27,20 @@ const initializeDbAndServer = async () => {
 initializeDbAndServer();
 
 const isPriorityAndStatus = (requestQuery) => {
-  return requestQuery.priority != undefined && requestQuery.status != undefined;
+  return;
+  requestQuery.priority !== undefined && requestQuery.status !== undefined;
 };
 
 const isPriority = (requestQuery) => {
-  return requestQuery.priority != undefined;
+  return requestQuery.priority !== undefined;
 };
 
 const isStatus = (requestQuery) => {
-  return requestQuery.status != undefined;
+  return requestQuery.status !== undefined;
 };
 
 const isSearch_q = (requestQuery) => {
-  return requestQuery.Search_q != undefined;
+  return requestQuery.search_q !== undefined;
 };
 
 app.get("/todos/", async (request, response) => {

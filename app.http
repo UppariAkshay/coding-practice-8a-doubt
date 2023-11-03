@@ -1,4 +1,4 @@
-GET http://localhost:3000/todos/?search_q=checkout
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
 
 
 INSERT INTO todo (id,todo,priority,status)
