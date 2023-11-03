@@ -1,0 +1,12 @@
+GET http://localhost:3000/todos/?search_q=checkout
+
+
+INSERT INTO todo (id,todo,priority,status)
+VALUES (3,"learn javascript","LOW","DONE"),
+(4,"go for running","HIGH","TO DO"),
+(5,"learn nodejs","MEDIUM","PROGRESS"),
+(6,"learn sqlite","LOW","TO DO"),
+(7,"checkout emails","LOW","DONE"),
+(8,"prepare for exams","HIGH","TO DO"),
+(9,"read books","MEDIUM","DONE"),
+(10,"cook food","HIGH","TO DO");
